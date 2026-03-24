@@ -3,7 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from .models import Comment, Category, Post
 
-class CommentItemInline(admin.TabularIntline):
+class CommentItemInline(admin.TabularInline):
     model = Commentraw_id_fields = ['post']
 
 class PostAdmin(admin.ModelAdmin):
